@@ -114,9 +114,9 @@ After creating your migration, use the `seeds.rb` file to create instances of yo
 
 - `User#favorite_product`
   - returns the product instance that has the highest star rating from this user
-- `User#remove_review(product)`
-  - takes an `Product` (an instance of the `Product` class) and removes all of this user's reviews for that product
-  - you will have to delete any rows from the `reviews` table associated with this user and the product to get this to work!
+- `User#remove_reviews(product)`
+  - takes an `Product` (an instance of the `Product` class) and removes *all* of this user's reviews for that product
+  - you will have to delete any rows from the `reviews` table associated with this user and the product
 - `User.most_reviews`
   - returns *one* User instance for the User who has given the most reviews
 
