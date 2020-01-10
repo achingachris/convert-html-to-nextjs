@@ -4,7 +4,7 @@ For this assignment, we'll be working with an e-commerce domain like Amazon. We'
 
 We have three models: `User`, `Review`, and `Product`.
 
-For our purposes, a `Product` has many `User`s, a `User` has many `Products`s, and a `Review` belongs to a `User` and to an `Product`.
+For our purposes, a `Product` has many `User`s, a `User` has many `Products`s, and a `Review` belongs to a `User` and to a `Product`.
 
 `Product` - `User` is a many to many relationship.
 
@@ -61,7 +61,7 @@ Remember: Active Record give your classes access to a lot of methods already! Ke
 
 Before working on the rest of the deliverables, you will need to create a migration for the `reviews` table. 
 
-- A `Review` belongs to a `Product`, and a `Review` also belongs to an `User`. In your migration, create any columns your `reviews` table will need to establish these relationships.
+- A `Review` belongs to a `Product`, and a `Review` also belongs to a `User`. In your migration, create any columns your `reviews` table will need to establish these relationships.
 - The `reviews` table should also have:
   - A `star_rating` column that stores an integer.
   - A `comment` column that stores a string.
@@ -115,7 +115,7 @@ After creating your migration, use the `seeds.rb` file to create instances of yo
 - `User#favorite_product`
   - returns the product instance that has the highest star rating from this user
 - `User#remove_reviews(product)`
-  - takes an `Product` (an instance of the `Product` class) and removes *all* of this user's reviews for that product
+  - takes a `Product` (an instance of the `Product` class) and removes *all* of this user's reviews for that product
   - you will have to delete any rows from the `reviews` table associated with this user and the product
 - `User.most_reviews`
   - returns *one* User instance for the User who has given the most reviews
