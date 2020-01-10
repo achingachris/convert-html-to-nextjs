@@ -1,4 +1,4 @@
-# Object Relations Code Challenge - Amazon
+# Object Relations Code Challenge - Product Reviews
 
 For this assignment, we'll be working with an e-commerce domain like Amazon. We'll be focusing on the product reviews.
 
