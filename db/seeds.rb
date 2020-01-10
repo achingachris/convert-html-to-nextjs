@@ -1,27 +1,26 @@
-# This will delete any existing rows from the Movie and Actor tables
+# This will delete any existing rows from the Product and User tables
 # so you can run the seed file multiple times without having duplicate entries in your database
-puts "Deleting movie/actor data..."
-Movie.destroy_all
-Actor.destroy_all
+puts "Deleting old data..."
+Product.destroy_all
+User.destroy_all
 
-puts "Creating movies..."
-mean_girls = Movie.create(title: "Mean Girls", box_office_earnings: 129_000_000)
-spice_world = Movie.create(title: "Spice World", box_office_earnings: 151_000_000)
+puts "Creating users..."
+user1 = User.create(name: Faker::Name.name)
+user2 = User.create(name: Faker::Name.name)
+user3 = User.create(name: Faker::Name.name)
 
-puts "Creating actors..."
-lindsay_lohan = Actor.create(name: "Lindsay Lohan")
-tina_fey = Actor.create(name: "Tina Fey")
-baby_spice = Actor.create(name: "Emma Bunton")
-ginger_spice = Actor.create(name: "Geri Halliwell")
-scary_spice = Actor.create(name: "Melanie Brown")
-sporty_spice = Actor.create(name: "Melanie Chisholm")
-posh_spice = Actor.create(name: "Victoria Addams")
+puts "Creating products..."
+product1 = Product.create(name: "Stapler", price: 10)
+product2 = Product.create(name: "Whiteboard", price: 15)
+product3 = Product.create(name: "Dry Erase Markers", price: 5)
+product4 = Product.create(name: "Ballpoint Pens", price: 2)
+product5 = Product.create(name: "Scotch Tape", price: 3)
 
-puts "Creating roles..."
-# ***********************************************************
-# * TODO: create roles! Remember, a role belongs to a movie *
-# * and a role belongs to an actor.                         *
-# ***********************************************************
-# Create Roles Here
+puts "Creating reviews..."
+# *****************************************************************
+# * TODO: create reviews! Remember, a review belongs to a product *
+# * and a review belongs to an user.                              *
+# *****************************************************************
+# Create Reviews Here
 
 puts "Seeding done!"

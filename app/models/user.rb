@@ -1,3 +1,3 @@
-class Actor < ActiveRecord::Base
+class User < ActiveRecord::Base
     
 end

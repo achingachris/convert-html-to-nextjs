@@ -1,3 +1,3 @@
-class Movie < ActiveRecord::Base
+class Product < ActiveRecord::Base
     
 end

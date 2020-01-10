@@ -1,4 +1,4 @@
-class Role < ActiveRecord::Base
+class Review < ActiveRecord::Base
     
 end
 

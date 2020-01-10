@@ -46,7 +46,6 @@ The starter code has migrations and models for the initial `User` and `Product` 
 | -----------           | --------- |
 | name                  | String    |
 | price                 | Integer   |
-| description           | String    |
 
 You will need to create the migration for the `reviews` table using the attributes specified in the deliverables below.
 
