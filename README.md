@@ -66,7 +66,7 @@ Before working on the rest of the deliverables, you will need to create a migrat
   - A `star_rating` column that stores an integer.
   - A `comment` column that stores a string.
 
-After creating your migration, use the `seeds.rb` file to create instances of your `Review` class so you can test your code.
+After creating your migration, create your `Review` class, and use the `seeds.rb` file to create `Review` instances so you can test your code.
 
 **Once you've set up your `Review` class**, work on building out the following deliverables. Use Active Record association macros and Active Record query methods where appropriate.
 
