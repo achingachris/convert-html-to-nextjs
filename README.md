@@ -68,9 +68,11 @@ Before working on the rest of the deliverables, you will need to create a migrat
 
 After creating your migration, create your `Review` class, and use the `seeds.rb` file to create `Review` instances so you can test your code.
 
-**Once you've set up your `Review` class**, work on building out the following deliverables. Use Active Record association macros and Active Record query methods where appropriate.
+**Once you've set up your `Review` class**, work on building out the following deliverables.
 
 ### Object Relationship Methods
+
+Use Active Record association macros and Active Record query methods where appropriate (i.e. `has_many`, `has_many through`, and `belongs_to`).
 
 #### Review
 
